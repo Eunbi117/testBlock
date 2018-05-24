@@ -6,7 +6,7 @@ class Block:
     def __init__(self, index, timestamp, data, previous_hash):
         self.index = index #번호
         self.timestamp = timestamp #시간
-        self.data = data #날짜
+        self.data = data #내용
         self.previous_hash = previous_hash #전에 있던 블록
         self.hash = self.hash_block()
         
