@@ -46,6 +46,8 @@ for i in range(0, num_of_blocks_to_add):
     blockchain.append(block_to_add) #맨 처음 붙인 블록에 위에 만든 블록 붙임(리스트임)
     previous_block = block_to_add #전의 블록은 위에 생성된 블록으로 바꿈
 
+    print("Block text : {}".format(block_to_add.data))
     print("Block #{} has been added to the blockchain!".format(block_to_add.index))
     print("Hash: {}\n".format(block_to_add.hash))
+
 
